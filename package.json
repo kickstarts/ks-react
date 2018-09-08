@@ -1,0 +1,101 @@
+{
+  "name": "react-kickstart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    "defaults",
+    "ie >= 9"
+  ],
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "jest",
+      "expect",
+      "it",
+      "test",
+      "describe"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --semi false --single-quote",
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "<rootDir>/src/__tests__/**/*.js",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "setupFiles": [
+      "<rootDir>/src/config/jest"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "apisauce": "^0.16.0",
+    "connected-react-router": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "humps": "^2.0.1",
+    "lodash": "^4.17.4",
+    "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^0.16.0",
+    "reduxsauce": "0.7.0",
+    "reselect": "^3.0.1",
+    "seamless-immutable": "^7.1.4",
+    "styled-components": "^3.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "docz": "^0.11.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "jest-enzyme": "^6.0.4",
+    "lint-staged": "^7.2.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-scripts": "^1.1.5",
+    "react-test-renderer": "^16.5.0",
+    "redux-mock-store": "^1.5.3",
+    "standard": "^12.0.1",
+    "standard-version": "^4.4.0"
+  }
+}

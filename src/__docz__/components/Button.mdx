@@ -1,0 +1,39 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import { Button } from '@components/Button'
+
+# Button
+
+Buttons make common actions more obvious and help users more easily perform them. Buttons use labels and sometimes icons to communicate the action that will occur when the user touches them.
+
+## Properties
+
+<PropsTable of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button>Click me</Button>
+</Playground>
+
+## Sizes
+
+<Playground>
+  <Button scale="small">Click me</Button>
+  <Button scale="normal">Click me</Button>
+  <Button scale="big">Click me</Button>
+</Playground>
+
+## States
+
+<Playground>
+  <Button kind="primary">Click me</Button>
+  <Button kind="secondary">Click me</Button>
+  <Button kind="cancel">Click me</Button>
+  <Button kind="dark">Click me</Button>
+  <Button kind="gray">Click me</Button>
+</Playground>
