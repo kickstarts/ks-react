@@ -59,6 +59,7 @@
     "humps": "^2.0.1",
     "lodash": "^4.17.4",
     "normalize.css": "^8.0.0",
+    "normalizr": "^3.2.4",
     "numeral": "^2.0.6",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
