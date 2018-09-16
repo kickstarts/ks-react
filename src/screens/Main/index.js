@@ -4,7 +4,21 @@ import { connect } from 'react-redux'
 
 import { Container } from './styles'
 
-// import { } from '@redux/main'
+// Config
+// import { } from '@config'
+// import 'reactotronSetup'
+
+// Commons
+// import { } from '@components'
+
+// Helpers
+// import {  } from '@lib/helpers'
+
+// Validators
+// import {  } from '@lib/validators'
+
+// Redux
+// import { } from '@redux'
 
 class Main extends Component {
   constructor(props) {
