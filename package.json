@@ -51,7 +51,6 @@
     ]
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "apisauce": "^0.16.0",
     "connected-react-router": "^4.4.1",
     "font-awesome": "^4.7.0",
@@ -80,6 +79,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-0": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
     "babel-plugin-module-resolver": "^3.1.1",
