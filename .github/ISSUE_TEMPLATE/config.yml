@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🆕 Request new feature
+    url: https://sample/url
+    about: Describe here
+  - name: 🙋 Ask a question
+    url: https://sample/url
+    about: Describe here
+  - name: 📕 Documentation
+    url: https://sample/url
+    about: Describe here

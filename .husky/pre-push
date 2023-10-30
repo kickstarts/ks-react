@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+LRED='\033[1;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # NO COLOUR
+
+echo "${YELLOW}■------------■"
+echo "${YELLOW}|| Pre Push ||"
+echo "${YELLOW}■------------■"
+echo "${NC}"
+
+echo "${GREEN}Running Lint...${NC}\n"
+
+pnpm i & pnpm lint-staged
